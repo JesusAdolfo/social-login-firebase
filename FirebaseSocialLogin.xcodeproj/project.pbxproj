@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		85D317CAC73730B7D76249E9 /* Pods_FirebaseSocialLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C6860542063576A6DA12D4 /* Pods_FirebaseSocialLogin.framework */; };
+		B09ACF4E1DEDE17500723B10 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B09ACF4D1DEDE17500723B10 /* GoogleService-Info.plist */; };
 		B0E2D7EC1DEC408300028083 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E2D7EB1DEC408300028083 /* AppDelegate.swift */; };
 		B0E2D7EE1DEC408300028083 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E2D7ED1DEC408300028083 /* ViewController.swift */; };
 		B0E2D7F11DEC408300028083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E2D7EF1DEC408300028083 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		5CF39127F72A198E4BE366E8 /* Pods-FirebaseSocialLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSocialLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseSocialLogin/Pods-FirebaseSocialLogin.release.xcconfig"; sourceTree = "<group>"; };
 		AD05D28DEC8F66DC714D0F55 /* Pods-FirebaseSocialLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSocialLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseSocialLogin/Pods-FirebaseSocialLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		B09ACF4C1DEC699200723B10 /* FirebaseSocialLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseSocialLogin.entitlements; sourceTree = "<group>"; };
+		B09ACF4D1DEDE17500723B10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B0E2D7E81DEC408300028083 /* FirebaseSocialLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseSocialLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E2D7EB1DEC408300028083 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0E2D7ED1DEC408300028083 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				B0E2D7F21DEC408300028083 /* Assets.xcassets */,
 				B0E2D7F41DEC408300028083 /* LaunchScreen.storyboard */,
 				B0E2D7F71DEC408300028083 /* Info.plist */,
+				B09ACF4D1DEDE17500723B10 /* GoogleService-Info.plist */,
 			);
 			path = FirebaseSocialLogin;
 			sourceTree = "<group>";
@@ -103,6 +106,7 @@
 				B0E2D7E61DEC408300028083 /* Resources */,
 				3DE7340C77A861C3FB5AB05D /* [CP] Embed Pods Frameworks */,
 				AEC0A0865822A1AA2C607E93 /* [CP] Copy Pods Resources */,
+				B09ACF4F1DEDF98800723B10 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -159,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0E2D7F61DEC408300028083 /* LaunchScreen.storyboard in Resources */,
+				B09ACF4E1DEDE17500723B10 /* GoogleService-Info.plist in Resources */,
 				B0E2D7F31DEC408300028083 /* Assets.xcassets in Resources */,
 				B0E2D7F11DEC408300028083 /* Main.storyboard in Resources */,
 			);
@@ -211,6 +216,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseSocialLogin/Pods-FirebaseSocialLogin-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B09ACF4F1DEDF98800723B10 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 7bc2947709b7b271008ca06f6e9b34faa9ccd250 dfe726d5990fa5c3234d1f18d105518f5dc1fbe9281cb6d13b132472f9999a34";
 		};
 /* End PBXShellScriptBuildPhase section */
 
